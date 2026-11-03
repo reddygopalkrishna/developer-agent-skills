@@ -1,0 +1,145 @@
+{
+  "name": "developer-agent-skills",
+  "owner": {
+    "name": "reddygopalkrishna"
+  },
+  "metadata": {
+    "description": "Agent Skills for every kind of developer: core engineering, architecture, frontend, backend, security, data, DevOps/cloud and AI engineering.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "engineering-core",
+      "description": "Verification, debugging, code review, testing, refactoring, git, design docs, profiling, upgrades, migrations, incidents, onboarding and monorepos.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/verify-before-done",
+        "./skills/root-cause-debugging",
+        "./skills/code-review-changes",
+        "./skills/unit-testing",
+        "./skills/test-strategy",
+        "./skills/legacy-refactoring",
+        "./skills/git-workflow",
+        "./skills/design-docs",
+        "./skills/performance-profiling",
+        "./skills/dependency-upgrades",
+        "./skills/large-scale-migrations",
+        "./skills/incident-response",
+        "./skills/codebase-onboarding",
+        "./skills/monorepo-management"
+      ]
+    },
+    {
+      "name": "architecture",
+      "description": "System design, domain-driven design, event-driven architecture, caching and concurrency.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/system-design",
+        "./skills/domain-driven-design",
+        "./skills/event-driven-architecture",
+        "./skills/caching-strategies",
+        "./skills/concurrency-patterns"
+      ]
+    },
+    {
+      "name": "frontend",
+      "description": "TypeScript, React, web performance, accessibility, frontend security, SEO and SSR, micro-frontends, design systems and internationalization.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/typescript-patterns",
+        "./skills/react-patterns",
+        "./skills/web-performance",
+        "./skills/web-accessibility",
+        "./skills/frontend-security",
+        "./skills/seo-and-ssr",
+        "./skills/micro-frontends",
+        "./skills/design-systems",
+        "./skills/internationalization"
+      ]
+    },
+    {
+      "name": "backend",
+      "description": "API design, GraphQL, gRPC, realtime APIs, background jobs, file uploads, search, resilience and observability.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/api-design",
+        "./skills/graphql-apis",
+        "./skills/grpc-services",
+        "./skills/realtime-apis",
+        "./skills/background-jobs",
+        "./skills/file-storage-uploads",
+        "./skills/search-integration",
+        "./skills/resilience-patterns",
+        "./skills/observability"
+      ]
+    },
+    {
+      "name": "security",
+      "description": "Secure coding, threat modeling and authentication/authorization.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/secure-coding",
+        "./skills/threat-modeling",
+        "./skills/auth-implementation"
+      ]
+    },
+    {
+      "name": "data",
+      "description": "Zero-downtime migrations, SQL and ORM performance, PostgreSQL operations, data and NoSQL modeling, database testing, privacy and retention, and data pipelines.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/database-migrations",
+        "./skills/sql-optimization",
+        "./skills/orm-patterns",
+        "./skills/postgres-operations",
+        "./skills/database-schema-design",
+        "./skills/nosql-design",
+        "./skills/database-testing",
+        "./skills/data-privacy-retention",
+        "./skills/data-pipelines"
+      ]
+    },
+    {
+      "name": "devops-cloud",
+      "description": "Dockerfiles, CI/CD pipelines, infrastructure as code, Kubernetes deployments and cloud cost.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/dockerfiles",
+        "./skills/ci-cd-pipelines",
+        "./skills/infrastructure-as-code",
+        "./skills/kubernetes-deployments",
+        "./skills/cloud-cost-optimization"
+      ]
+    },
+    {
+      "name": "ai-engineering",
+      "description": "LLM integration, RAG, evals, agents, ML experiments and MCP servers.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/llm-integration",
+        "./skills/rag-systems",
+        "./skills/llm-evals",
+        "./skills/building-agents",
+        "./skills/ml-experiments",
+        "./skills/mcp-servers"
+      ]
+    },
+    {
+      "name": "meta",
+      "description": "Writing and improving your own Agent Skills.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/writing-skills"
+      ]
+    }
+  ]
+}
