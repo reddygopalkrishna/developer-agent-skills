@@ -1,10 +1,10 @@
 ---
-name: secure-coding
-description: Writes and reviews code against the OWASP Top 10 risk categories with concrete, language-specific checks - broken access control and IDOR, injection, XSS, SSRF, authentication, sessions and JWTs, secrets, cryptography, unsafe deserialization, file uploads, CSRF, security headers, vulnerable dependencies and security logging. Use when writing code that handles user input, auth, files, URLs, secrets or money, when reviewing a PR for security, hardening an endpoint, or triaging scanner findings.
+name: security-audit
+description: Audits code for security issues and writes secure code, checking against the OWASP Top 10 risk categories with concrete, language-specific checks - broken access control and IDOR, injection, XSS, SSRF, authentication, sessions and JWTs, secrets, cryptography, unsafe deserialization, file uploads, CSRF, security headers, vulnerable dependencies and security logging. Use when asked for a security audit or security review of code, when writing code that handles user input, auth, files, URLs, secrets or money, when reviewing a PR for security, hardening an endpoint, or triaging scanner findings.
 license: MIT
 ---
 
-# Secure Coding
+# Security Audit
 
 Treat every input as hostile until it is validated, check authorization on every object for every request, and use the safe API instead of the clever one. Security bugs are mostly ordinary bugs in code that crosses a trust boundary.
 

@@ -1,6 +1,6 @@
 ---
 name: auth-implementation
-description: Implements authentication and authorization safely - OAuth 2.0 and OpenID Connect flows with PKCE, sessions vs tokens, token validation, refresh rotation, logout, RBAC/ABAC/ReBAC checks, service-to-service auth, MFA and passkeys. Use when adding login or SSO, integrating an identity provider, handling JWTs, access or refresh tokens, cookies or sessions, protecting APIs, adding roles and permissions, or reviewing auth code. Not for general secure-coding reviews (use secure-coding).
+description: Implements authentication and authorization safely - OAuth 2.0 and OpenID Connect flows with PKCE, sessions vs tokens, token validation, refresh rotation, logout, RBAC/ABAC/ReBAC checks, service-to-service auth, MFA and passkeys. Use when adding login or SSO, integrating an identity provider, handling JWTs, access or refresh tokens, cookies or sessions, protecting APIs, adding roles and permissions, or reviewing auth code. Not for general security-audit reviews (use security-audit).
 license: MIT
 ---
 

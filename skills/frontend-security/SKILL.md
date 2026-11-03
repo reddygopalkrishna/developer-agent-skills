@@ -1,6 +1,6 @@
 ---
 name: frontend-security
-description: Hardens browser code against XSS, token theft, CSRF, clickjacking and supply-chain attacks (safe DOM sinks, sanitization, strict CSP, Trusted Types, token storage, SRI, postMessage checks). Use when writing or reviewing frontend code that renders user content, handles auth tokens or cookies, adds third-party scripts, sets security headers or CSP, or uses innerHTML, dangerouslySetInnerHTML, v-html or bypassSecurityTrust. Not for server-side injection or authz checks (use secure-coding).
+description: Hardens browser code against XSS, token theft, CSRF, clickjacking and supply-chain attacks (safe DOM sinks, sanitization, strict CSP, Trusted Types, token storage, SRI, postMessage checks). Use when writing or reviewing frontend code that renders user content, handles auth tokens or cookies, adds third-party scripts, sets security headers or CSP, or uses innerHTML, dangerouslySetInnerHTML, v-html or bypassSecurityTrust. Not for server-side injection or authz checks (use security-audit).
 license: MIT
 ---
 
@@ -16,7 +16,7 @@ Assume every string that reaches the DOM can contain an attacker's payload, and 
 - Adding third-party scripts (analytics, chat widgets, tag managers).
 - Using `postMessage`, iframes, redirects after login, or `window.open`.
 
-Not for: server-side injection, authorization checks and secrets management (see the **secure-coding** skill); OAuth/OIDC flows (see **auth-implementation**).
+Not for: server-side injection, authorization checks and secrets management (see the **security-audit** skill); OAuth/OIDC flows (see **auth-implementation**).
 
 ## Workflow
 

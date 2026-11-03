@@ -1,6 +1,6 @@
 ---
 name: threat-modeling
-description: Builds practical threat models - a data flow diagram with trust boundaries, STRIDE analysis per element, ranked threats, and mitigations turned into tracked work. Use when designing a new system or feature, reviewing a design doc or architecture for security, adding an external integration, auth flow, file upload, payment path or new data store, or when the user asks for a threat model or STRIDE analysis. Not for line-by-line code review (use secure-coding).
+description: Builds practical threat models - a data flow diagram with trust boundaries, STRIDE analysis per element, ranked threats, and mitigations turned into tracked work. Use when designing a new system or feature, reviewing a design doc or architecture for security, adding an external integration, auth flow, file upload, payment path or new data store, or when the user asks for a threat model or STRIDE analysis. Not for line-by-line code review (use security-audit).
 license: MIT
 ---
 
@@ -15,7 +15,7 @@ A threat model answers four questions (Adam Shostack's framework): **What are we
 - Before a security review, audit or launch.
 - After an incident, to find sibling threats.
 
-Not for: finding bugs in a specific diff (use `secure-coding` and `code-review-changes`). Not a compliance checklist.
+Not for: finding bugs in a specific diff (use `security-audit` and `code-review-changes`). Not a compliance checklist.
 
 ## Workflow
 

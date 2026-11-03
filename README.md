@@ -14,17 +14,18 @@ npx skills add reddygopalkrishna/developer-agent-skills
 
 ---
 
-## Why you can trust these skills
+## Why Developer Agent Skills?
 
-- **Plain Markdown only.** No scripts, no install hooks, no network calls. You can read every skill before you install it.
-- **Safety gates built in.** Any skill that can touch data, git history, infrastructure or production tells the agent to stop and ask you first.
 - **Concrete, not generic.** Real commands, decision tables, thresholds from standards (WCAG 2.2, RFC 9457, Core Web Vitals, OpenTelemetry), common mistakes, and clear "done when" criteria.
-- **Works in any agent.** Only the portable `name`, `description` and `license` fields are used, and no agent-specific tool names.
-- **Checked in CI.** Every push runs [`scripts/validate_skills.py`](scripts/validate_skills.py): frontmatter, naming rules, size limits and broken links.
+- **Works in any agent.** Claude Code, Cursor, Codex, Copilot, Gemini CLI and more. Only portable fields, no agent-specific tool names.
+- **Reusable instructions, loaded only when needed.** Write once, use in every project. Your agent reads a skill only when the task matches, so there are no long prompts to paste and no wasted context.
+- **Safe by default.** Anything that touches data, git history, infrastructure or production makes the agent stop and ask you first.
+- **Plain Markdown you can read.** No scripts, no install hooks, no network calls.
+- **Checked on every push.** CI runs [`scripts/validate_skills.py`](scripts/validate_skills.py) on every skill: format, naming, size limits and links.
 
 ## Install
 
-### Any agent (recommended)
+### Any AI coding agent (recommended)
 
 The [`skills` CLI](https://github.com/vercel-labs/skills) detects your agents and installs into each one:
 
@@ -35,12 +36,15 @@ npx skills add reddygopalkrishna/developer-agent-skills
 Useful options:
 
 ```bash
+# See every skill in the pack
 npx skills add reddygopalkrishna/developer-agent-skills --list
+
+# Install only the skills you want
 npx skills add reddygopalkrishna/developer-agent-skills --skill database-migrations --skill code-review-changes
+
+# Install for globally (all projects) instead of the current project
 npx skills add reddygopalkrishna/developer-agent-skills -g
 ```
-
-`--list` shows the skills, `--skill` picks specific ones, and `-g` installs for your user instead of the current project.
 
 ### Claude Code plugin marketplace
 
@@ -73,13 +77,26 @@ Folder support changes quickly. If a skill doesn't show up, check your agent's d
 
 ## How to use them
 
-You don't need to call a skill. Each agent reads the skill descriptions and loads the right one when your task matches. Just work normally:
+You don't need to call a skill. Each agent reads the skill descriptions and automatically loads the right one when your task matches. Just work normally:
 
-> "Add a non-null `region` column to the orders table" loads **database-migrations**
-> "This test fails randomly in CI" loads **test-strategy**
-> "Review this PR" loads **code-review-changes**
+- *"Design the REST endpoints for orders"* loads **api-design**
+- *"Create the tables for the new billing feature"* loads **database-schema-design**
+- *"Add a non-null `region` column to the orders table"* loads **database-migrations**
+- *"Make this settings page accessible for keyboard and screen-reader users"* loads **web-accessibility**
+- *"This test fails randomly in CI"* loads **test-strategy**
+- *"Review this PR"* loads **code-review-changes**
 
-You can also ask for one by name: *"Use the threat-modeling skill on this design."*
+If you want a specific skill, ask for it by name:
+
+- *"Use the **api-design** skill to design the endpoints for orders."*
+- *"Use the **database-schema-design** skill to design the tables for this feature."*
+- *"Use **api-design** and **database-schema-design** together to plan the orders service."*
+- *"Use the **security-audit** skill to run a security audit on this code."*
+- *"Use the **test-strategy** skill to decide how we should test the checkout flow."*
+- *"Use the **unit-testing** skill to add tests for the code I just changed."*
+- *"Use **verify-before-done** before you tell me it's finished."*
+
+Either way works. Installed skills load automatically when they match, and naming one just makes sure it's used.
 
 ## Skills
 
@@ -123,7 +140,7 @@ You can also ask for one by name: *"Use the threat-modeling skill on this design
 | [frontend-security](skills/frontend-security/SKILL.md) | XSS sinks, strict CSP, token storage, third-party scripts |
 | [seo-and-ssr](skills/seo-and-ssr/SKILL.md) | Pick a rendering mode; metadata, structured data, crawlability |
 | [micro-frontends](skills/micro-frontends/SKILL.md) | When to split a frontend, composition options, shared dependencies |
-| [design-systems](skills/design-systems/SKILL.md) | Tokens, component APIs, theming and versioning |
+| [design-systems](skills/design-systems/SKILL.md) | Tokens, component APIs, every component state, theming and versioning |
 | [internationalization](skills/internationalization/SKILL.md) | ICU messages, locale formatting, RTL, pseudo-localization |
 
 ### Backend
@@ -144,7 +161,7 @@ You can also ask for one by name: *"Use the threat-modeling skill on this design
 
 | Skill | What it does |
 | --- | --- |
-| [secure-coding](skills/secure-coding/SKILL.md) | Concrete checks for the OWASP Top 10 risk categories |
+| [security-audit](skills/security-audit/SKILL.md) | Concrete checks for the OWASP Top 10 risk categories |
 | [threat-modeling](skills/threat-modeling/SKILL.md) | Data flow diagrams and STRIDE, turned into tracked mitigations |
 | [auth-implementation](skills/auth-implementation/SKILL.md) | OAuth 2.0 / OIDC with PKCE, sessions, tokens, authorization |
 

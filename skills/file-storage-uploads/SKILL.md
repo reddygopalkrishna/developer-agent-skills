@@ -1,6 +1,6 @@
 ---
 name: file-storage-uploads
-description: Builds safe file upload, storage and download flows on object storage (presigned URLs, multipart and resumable uploads, size and type limits, magic-byte checks, malware scanning with quarantine, image processing safety, safe serving headers, signed downloads, lifecycle rules). Use when adding file or image uploads, attachments, avatars, document storage or downloads, using S3, Azure Blob, GCS or similar, or reviewing upload code for security. Not for general secure-coding reviews (use secure-coding).
+description: Builds safe file upload, storage and download flows on object storage (presigned URLs, multipart and resumable uploads, size and type limits, magic-byte checks, malware scanning with quarantine, image processing safety, safe serving headers, signed downloads, lifecycle rules). Use when adding file or image uploads, attachments, avatars, document storage or downloads, using S3, Azure Blob, GCS or similar, or reviewing upload code for security. Not for general security-audit reviews (use security-audit).
 license: MIT
 ---
 
@@ -16,7 +16,7 @@ Treat every uploaded file as hostile until it has been checked, and never trust 
 - Large file uploads that time out or fail on slow networks.
 - Security review of upload or download endpoints.
 
-Not for: general injection and authz review (see **secure-coding**); browser-side XSS (see **frontend-security**).
+Not for: general injection and authz review (see **security-audit**); browser-side XSS (see **frontend-security**).
 
 ## Workflow
 

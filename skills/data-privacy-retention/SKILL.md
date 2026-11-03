@@ -18,7 +18,7 @@ Personal data you don't collect can't leak, and data you delete on schedule can'
 - Copying production data into test, staging, analytics or a vendor tool.
 - Reviewing logs, traces, error reports and analytics events for personal data.
 
-Not for: application security controls in general (use secure-coding), threat analysis (use threat-modeling), or backups as such (use postgres-operations).
+Not for: application security controls in general (use security-audit), threat analysis (use threat-modeling), or backups as such (use postgres-operations).
 
 ## Workflow
 
@@ -38,7 +38,7 @@ Not for: application security controls in general (use secure-coding), threat an
 | Personal data | Name, email, phone, postal address, IP address, device and cookie IDs, account IDs linked to a person | Access control, retention period, included in erasure and export |
 | Sensitive / special category | Health, biometrics, genetic data, religion, sexual orientation, political opinions, precise location, government IDs | Above, plus field-level encryption, stricter access and audit, often extra legal requirements |
 | Payment card data | Card numbers, CVV | Don't store it. Use the payment provider's tokens (keeps you out of most PCI DSS scope) |
-| Credentials and secrets | Passwords, API keys, tokens | Hash passwords (see secure-coding); secrets belong in a secrets manager, never in data tables or logs |
+| Credentials and secrets | Passwords, API keys, tokens | Hash passwords (see security-audit); secrets belong in a secrets manager, never in data tables or logs |
 | Not personal | Aggregates that can't be traced to a person | Normal handling (but small groups can re-identify people) |
 
 Tag classification where engineers will see it, for example PostgreSQL column comments (`COMMENT ON COLUMN users.email IS 'pii:contact';`), schema annotations in the ORM, or a data catalog. Add a CI check or code review rule: new columns must have a classification.

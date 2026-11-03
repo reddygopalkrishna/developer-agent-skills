@@ -10,7 +10,7 @@ First release: 61 skills in 9 plugins.
 - **architecture**: system-design, domain-driven-design, event-driven-architecture, caching-strategies, concurrency-patterns
 - **frontend**: typescript-patterns, react-patterns, web-performance, web-accessibility, frontend-security, seo-and-ssr, micro-frontends, design-systems, internationalization
 - **backend**: api-design, graphql-apis, grpc-services, realtime-apis, background-jobs, file-storage-uploads, search-integration, resilience-patterns, observability
-- **security**: secure-coding, threat-modeling, auth-implementation
+- **security**: security-audit, threat-modeling, auth-implementation
 - **data**: database-migrations, sql-optimization, orm-patterns, postgres-operations, database-schema-design, nosql-design, database-testing, data-privacy-retention, data-pipelines
 - **devops-cloud**: dockerfiles, ci-cd-pipelines, infrastructure-as-code, kubernetes-deployments, cloud-cost-optimization
 - **ai-engineering**: llm-integration, rag-systems, llm-evals, building-agents, ml-experiments, mcp-servers

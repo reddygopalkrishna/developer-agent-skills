@@ -79,7 +79,7 @@ Any client can send an arbitrarily deep or wide query. Add all of these:
 - Never use loaders to bypass permission checks: check after loading, or batch-load only what the user may see.
 - Treat arguments as untrusted input: validate formats and bound sizes (string lengths, list lengths, `first`).
 
-For general access-control checks, see the secure-coding and auth-implementation skills.
+For general access-control checks, see the security-audit and auth-implementation skills.
 
 ## Evolving the schema
 

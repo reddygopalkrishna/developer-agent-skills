@@ -83,7 +83,7 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/secure-coding",
+        "./skills/security-audit",
         "./skills/threat-modeling",
         "./skills/auth-implementation"
       ]
